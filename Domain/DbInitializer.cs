@@ -50,7 +50,7 @@ namespace Domain
             users.Add(new User("Hunter", "Latourette", "hlatourette@vintagesoftware.com", "Password123", 1));
             users.Add(new User("Brandon", "Goren", "bgoren@vintagesoftware.com", "Password123", 1));
             users.Add(new User("David", "Pfeiffer", "dpfeiffer@vintagesoftware.com", "Password123", 1));
-            users.Add(new User("Steven", "Haar", "shaar@vintagesoftware.com", "Password123", 1));
+            users.Add(new User("Steve", "Haar", "shaar@vintagesoftware.com", "Password123", 1));
             users.Add(new User("Cory", "Bateman", "cbateman@vintagesoftware.com", "Password123", 1));
             users.Add(new User("Josiah", "Burchard", "jburchard@vintagesoftware.com", "Password123", 1));
             return users;
