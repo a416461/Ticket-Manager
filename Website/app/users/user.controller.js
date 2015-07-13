@@ -15,6 +15,9 @@
 
         activate();
 
+        // Hunter's comment
+        // Git Test
+
         function updateUser(firstName, lastName, email, password) {
             return userService.updateUser($routeParams.userId, { 'firstName': firstName, 'lastName': lastName, 'email': email, 'password': password })
             .then(function() { $route.reload(); });
