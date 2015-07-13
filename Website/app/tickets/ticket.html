@@ -1,0 +1,40 @@
+﻿<div class="title-bar">
+    <h2>Ticket Details</h2>
+    <a ng-show="vm.ticket.status === 'Open'" ng-click="vm.closeTicket()" class="main-button red">Close Ticket</a>
+    <a ng-show="vm.ticket.status === 'Open'" href="/app/tickets/{{ vm.ticket.id }}/edit" class="main-button">Edit Ticket</a>
+</div>
+<div class="main-content">
+    <div class="content">
+        <h3>{{ vm.ticket.title }}</h3>
+        <hr />
+        <div class="meta-data">
+            <p>Category: <span class="default">{{ vm.ticket.category }}</span></p>
+            <p>Priority: <span class="priority" ng-class="{'Low':'low', 'Medium':'medium', 'High':'high'}[vm.ticket.priority]">{{ vm.ticket.priority }}</span></p>
+            <p>Status:  <span class="status" ng-class="{'Open':'green', 'Closed':'red'}[vm.ticket.status]">{{ vm.ticket.status }}</span></p>
+            <p>Date Created:  <span class="default">{{ vm.ticket.dateCreated | date:"MMMM d ', ' yyyy ' at ' h:mm a" }}</span></p>
+            <p>Last Edited:  <span class="default">{{ vm.ticket.lastEdited | date:"MMMM d ', ' yyyy ' at ' h:mm a" }}</span></p>
+            <p>Created By: <span class="default">{{ vm.ticket.creator }}</span></p>
+        </div>
+        <div class="object-content">
+            <h4>Content</h4>
+            <p>{{ vm.ticket.content }}</p>
+        </div>
+        <div class="update" ng-repeat="update in vm.updates | orderBy:'-id'">
+            <div class="head">
+                <h4>Update</h4>
+                <p>{{ update.dateCreated | date:"MMMM d ', ' yyyy ' at ' h:mm a" }}</p>
+            </div>
+            <p class="note">{{ update.content }}</p>
+            <p class="signature" ng-hide="{{ update.systemGeneratedNote }}">-{{ update.creator }}</p>
+        </div>
+    </div>
+    <div class="content post-update" ng-show="vm.ticket.status === 'Open'">
+        <h3>Update Ticket</h3>
+        <form class="main-form" ng-submit="vm.updateTicket(update)">
+            <div class="controls">
+                <textarea ng-model="update" required></textarea>
+                <button class="single" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

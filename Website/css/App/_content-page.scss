@@ -1,0 +1,136 @@
+﻿/*****************************************
+    Content
+*****************************************/
+
+.app-content {
+
+    .content {
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 5px 15px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 15px;
+        max-width: 1200px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 30px;
+            padding: 20px 0 10px 0;
+            margin: 0;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        > div {
+            background-color: #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .meta-data {
+            overflow: auto;
+
+            p {
+                padding: 5px;
+            }
+        }
+
+        .object-content {
+
+            p {
+                color: #333;
+                font-size: 18px;
+            }
+        }
+
+        .update {
+
+            .note {
+                color: #333;
+                font-size: 18px;
+            }
+
+            h4 {
+                margin-bottom: 5px;
+            }
+
+            .head {
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+                color: gray;
+            }
+
+            .signature {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .post-update {
+        background-color: #fff;
+
+        button.single {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    .app-content {
+
+        .content {
+            text-align: left;
+        }
+
+        .post-update {
+
+            button.single {
+                width: auto;
+            }
+        }
+    }
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+}
+
+/*****************************************
+    EXTRA Large Breakpoint
+*****************************************/
+@media screen and (min-width: 1200px) {
+    .app-content {
+
+        .post-update {
+            width: 50%;
+        }
+    }
+}

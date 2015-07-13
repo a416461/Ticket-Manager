@@ -1,0 +1,27 @@
+﻿/*****************************************
+    All Files Collection
+*****************************************/
+
+/* Resources */
+@import "Resources/_normalize.scss";
+@import "Resources/_grid.scss";
+/* General */
+@import "General/_variables.scss";
+@import "General/_mixins.scss";
+@import "General/_extends.scss";
+@import "General/_general.scss";
+@import "General/_header.scss";
+@import "General/_page-title.scss";
+@import "General/_footer.scss";
+@import "General/_containers.scss";
+@import "General/_forms.scss";
+/* Pages */
+@import "Pages/_homepage.scss";
+@import "Pages/_about-us.scss";
+@import "Pages/_my-account.scss";
+/* App */
+@import "App/_app.scss";
+@import "App/_meta-data.scss";
+@import "App/_menu.scss";
+@import "App/_controls.scss";
+@import "App/_content-page.scss";

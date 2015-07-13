@@ -1,0 +1,10 @@
+﻿<a ng-href="/app/users/{{ user.id }}">
+    <div class="list-item">
+        <div class="title">
+            <h3>{{ user.firstName + ' ' + user.lastName }}</h3>
+        </div>
+        <div class="meta-data">
+        <div class="status" ng-class="{true:'green', false:'red'}[user.isLoggedIn]">{{ user.isLoggedIn === true ? "Online" : "Offline" }}</div>
+        </div>
+    </div>
+</a>

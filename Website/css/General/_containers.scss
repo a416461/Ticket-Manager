@@ -1,0 +1,131 @@
+﻿/*****************************************
+    Position Containers
+    Optional parameters: Small, medium, large. Defaults to medium.
+*****************************************/
+
+.centered-container {
+    width: 100%;
+    max-width: 800px;
+    //display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.smaller-container {
+    max-width: 500px;
+}
+
+.larger-container {
+    max-width: 1200px;
+}
+
+
+
+/*****************************************
+    Content Containers
+    If multiple text containers are placed on a single page they should be contiguous.
+*****************************************/
+
+.content-container {
+    clear: both;
+    margin: 0 auto;
+    background: #eee;
+    padding: 0;
+    border-top: 5px solid lightgray;
+
+    .content-container-text {
+        padding: 0 10px;
+
+        h3 {
+            margin: 15px 0;
+        }
+
+        p {
+            margin: 15px 5px;
+        }
+    }
+
+    .content-container-img {
+        padding: 10px;
+
+        img {
+            max-width: 150px;
+            margin: 0;
+        }
+    }
+
+    &:nth-child(odd) {
+        background: #fff;
+
+        div div {
+            float: right;
+        }
+    }
+
+    &:last-of-type {
+        border-bottom: 5px solid lightgray;
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    .content-container {
+
+        .content-container-text {
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        .content-container-img {
+
+            img {
+                max-width: 175px;
+            }
+        }
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    .content-container {
+
+        .content-container-text {
+            padding: 35px;
+        }
+
+        .content-container-img {
+            padding: 20px;
+
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .content-container {
+
+        .content-container-text {
+            text-align: left;
+        }
+
+        .content-container-img {
+
+            img {
+                max-width: 225px;
+            }
+        }
+    }
+}

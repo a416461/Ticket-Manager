@@ -1,0 +1,18 @@
+﻿<div class="app-form-wrapper">
+    <h2>Edit Ticket</h2>
+    <form ng-submit="vm.editTicket(vm.ticket.title, vm.ticket.priority, vm.selectedCategory.id, vm.ticket.content)">
+        <label>Title</label><br />
+        <input type="text" ng-model="vm.ticket.title" required /><br />
+        <label>Priority</label><br />
+        <select ng-model="vm.ticket.priority" required>
+            <option>Low</option>
+            <option selected>Medium</option>
+            <option>High</option>
+        </select><br />
+        <label>Category</label><br />
+        <select ng-model="vm.selectedCategory" ng-options="category.name for category in vm.categories" required></select><br />
+        <label>Content</label><br />
+        <textarea ng-model="vm.ticket.content" required></textarea><br />
+        <button type="submit">Update</button>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+﻿<div class="title-bar">
+    <h2>User Details</h2>
+    <a ng-click="vm.deleteUser()" ng-show="main.User.accountType === 'business'" class="main-button red">Delete User</a>
+</div>
+<div class="main-content">
+    <div class="content">
+        <h3>{{ vm.user.firstName + ' ' + vm.user.lastName }}</h3>
+        <hr />
+        <div class="meta-data">
+            Meta Data Goes Here
+        </div>
+    </div>
+</div>

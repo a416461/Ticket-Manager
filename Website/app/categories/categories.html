@@ -1,0 +1,31 @@
+﻿<div class="title-bar">
+    <h2>Categories</h2>
+    <a href="/app/categories/new" class="main-button green">New Category</a>
+</div>
+<form class="search-bar"><input type="text" placeholder="Search Categories" ng-model="query" required /></form>
+<div class="main-content" id="page-with-search-bar">
+    <div class="main-controls-wrapper list-controls">
+        <form class="main-controls">
+            <h3>Sorting Options</h3>
+            <hr />
+            <div class="controls">
+                <select id="primary-sorting-option">
+                    <option selected>Sorting Options</option>
+                </select>
+                <select id="secondary-sorting-option">
+                    <option selected>Value Options</option>
+                </select>
+                <button class="double">Add</button><button class="double">Remove</button>
+            </div>
+            <div class="list">
+                <select size="8">
+                </select>
+            </div>
+        </form>
+    </div>
+    <ul>
+        <li ng-repeat="category in vm.categories | orderBy:'-id' | searchCategories:query">
+            <category-list-item category="category" />
+        </li>
+    </ul>
+</div>

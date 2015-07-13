@@ -1,0 +1,15 @@
+﻿<div class="title-bar">
+    <h2>Category Details</h2>
+    <a ng-click="vm.deleteCategory()" class="main-button red">Delete Category</a>
+    <a href="/app/categories/{{ vm.category.id }}/edit" class="main-button">Edit Category</a>
+</div>
+<div class="main-content">
+    <div class="content">
+        <h3>{{ vm.category.name }}</h3>
+        <hr />
+        <div class="meta-data">
+            <p>Date Created: <span class="default">{{ vm.category.dateCreated | date:"MMMM d ', ' yyyy ' at ' h:mm a" }}</span></p>
+            <p>Number of Tickets: <span class="default">{{ vm.category.numberOfTickets }}</span></p>
+        </div>
+    </div>
+</div>

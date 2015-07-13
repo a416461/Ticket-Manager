@@ -1,0 +1,26 @@
+﻿<div class="title-bar">
+    <h2>Tickets</h2>
+    <a href="/app/tickets/new" class="main-button green">New Ticket</a>
+</div>
+<form class="search-bar"><input type="text" placeholder="Search Tickets" ng-model="query" required /></form>
+<div class="main-content" id="page-with-search-bar">
+    <div class="main-controls-wrapper list-controls">
+        <form class="main-controls">
+            <h3>Sorting Options</h3>
+            <hr />
+            <div class="controls">
+                <select id="main-sorting-option" ng-change="vm.secondarySortingOption = (vm.availableSortingOptions | filter: { name: vm.primarySortingOption })[0].values[0]" ng-model="vm.primarySortingOption" ng-options="option.name as option.name for option in vm.availableSortingOptions"></select>
+                <select id="secondary-sorting-option" ng-model="vm.secondarySortingOption" ng-options="value as value for value in (vm.availableSortingOptions | filter: {name: vm.primarySortingOption})[0].values"></select>
+                <button class="double">Add</button><button class="double">Remove</button>
+            </div>
+            <div class="list">
+                <select size="8" ng-options="value as value for value in vm.sortingOptions"></select>
+            </div>
+        </form>
+    </div>
+    <ul>
+        <li ng-repeat="ticket in vm.tickets | orderBy:'-id' | searchTickets:query">
+            <ticket-list-item ticket="ticket" />
+        </li>
+    </ul>
+</div>

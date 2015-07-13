@@ -1,0 +1,65 @@
+﻿/*****************************************
+    Meta Data Tags
+*****************************************/
+.meta-data {
+    display: block;
+    margin: 0;
+    font-weight: bold;
+
+    div, span {
+        padding: 1px 10px;
+        margin: 0 3px;
+        border-radius: 15px;
+        display: inline-block;
+    }
+
+    .priority {
+
+        &.low {
+            background-color: $low-priority;
+        }
+
+        &.medium {
+            background-color: $medium-priority;
+        }
+
+        &.high {
+            background-color: $high-priority;
+        }
+    }
+
+    .status {
+
+        &.green {
+            background-color: $green-status;
+        }
+
+        &.red {
+            background-color: $red-status;
+        }
+    }
+
+    .default {
+        background-color: #ccc;
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+}

@@ -1,0 +1,27 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="earlybirds" ng-controller="mainController as main">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Early Birds</title>
+    <base href="/" />
+</head>
+<body>
+    <nav class="app-menu">
+        <ul>
+            <li><a href="/app/dashboard">Dashboard</a></li>
+            <li><a href="/app/tickets">Tickets</a></li>
+            <li><a href="/app/categories">Categories</a></li>
+            <li><a href="/app/conversations">Conversations</a></li>
+            <li><a href="/app/users">Users</a></li>
+            <li><a href="/app/account">Account</a></li>
+            <li><a href="/app/logout" ng-click="main.logout()">Log Out</a></li>
+        </ul>
+    </nav>
+    <main>
+        <ng-view class="app-content"></ng-view>
+    </main>
+    <script src="/dist/app.js"></script>
+</body>
+</html>

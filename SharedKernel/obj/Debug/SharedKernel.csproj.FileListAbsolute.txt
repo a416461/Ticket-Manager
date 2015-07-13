@@ -1,0 +1,7 @@
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\bin\Debug\SharedKernel.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\bin\Debug\SharedKernel.pdb
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\obj\Debug\SharedKernel.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\obj\Debug\SharedKernel.pdb
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\bin\Debug\SharedKernel.dll.CodeAnalysisLog.xml
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\bin\Debug\SharedKernel.dll.lastcodeanalysissucceeded
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\SharedKernel\obj\Debug\SharedKernel.csprojResolveAssemblyReference.cache

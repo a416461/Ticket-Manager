@@ -1,0 +1,82 @@
+﻿/*****************************************
+    Header
+*****************************************/
+
+header {
+    overflow: auto;
+    background: $primary-color;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+
+    div {
+        padding: 0 0 15px 0;
+
+        img {
+            vertical-align: middle;
+            width: 200px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #toggle-login-button {
+        padding: 2px 0;
+
+        a {
+            font-size: 12px;
+            font-weight: 600;
+            display: block;
+            padding: 2.5px 20px;
+            color: $primary-color;
+            text-transform: uppercase;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+/*****************************************
+    EXTRA Small Breakpoint
+*****************************************/
+@media screen and (min-width: 400px) {
+}
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    header {
+
+        div {
+            float: left;
+            padding: 0;
+
+            img {
+                width: 225px;
+            }
+        }
+
+        #toggle-login-button {
+            float: right;
+            margin: 0 0 0 15px;
+        }
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    header {
+        padding: 20px;
+    }
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+}

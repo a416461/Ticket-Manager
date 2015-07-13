@@ -1,0 +1,49 @@
+﻿/*****************************************
+    Page Title Wrapper
+*****************************************/
+
+.page-title-wrapper {
+    background: $secondary-color;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    .page-title-wrapper {
+        font-size: 20px;
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    .page-title-wrapper {
+        font-size: 22px;
+    }
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .page-title-wrapper {
+        padding: 35px 20px;
+        font-size: 26px;
+        overflow: auto;
+    }
+}

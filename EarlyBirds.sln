@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{9B3A515F-87B2-4A91-974A-51797BBBF36A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{39A4DEB4-1429-49A8-BBA6-0DE6E1012323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4CC447A2-D414-472A-A4FE-BFB61E9987A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{68AD359A-7714-4D08-9CA0-3F4377A1A8E6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEDACBE8-F9DB-4FF4-B803-9BF9347FF44B}"
+	ProjectSection(SolutionItems) = preProject
+		CustomDictionary.xml = CustomDictionary.xml
+		rules.ruleset = rules.ruleset
+		Settings.StyleCop = Settings.StyleCop
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "SharedKernel\SharedKernel.csproj", "{A88306C2-6982-4D89-8036-3A4B5E94AB9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{8CF99846-1830-4539-BABB-FE4C9D9A1B4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B3A515F-87B2-4A91-974A-51797BBBF36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3A515F-87B2-4A91-974A-51797BBBF36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3A515F-87B2-4A91-974A-51797BBBF36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3A515F-87B2-4A91-974A-51797BBBF36A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A4DEB4-1429-49A8-BBA6-0DE6E1012323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A4DEB4-1429-49A8-BBA6-0DE6E1012323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A4DEB4-1429-49A8-BBA6-0DE6E1012323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A4DEB4-1429-49A8-BBA6-0DE6E1012323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC447A2-D414-472A-A4FE-BFB61E9987A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC447A2-D414-472A-A4FE-BFB61E9987A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC447A2-D414-472A-A4FE-BFB61E9987A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC447A2-D414-472A-A4FE-BFB61E9987A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88306C2-6982-4D89-8036-3A4B5E94AB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88306C2-6982-4D89-8036-3A4B5E94AB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88306C2-6982-4D89-8036-3A4B5E94AB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88306C2-6982-4D89-8036-3A4B5E94AB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF99846-1830-4539-BABB-FE4C9D9A1B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF99846-1830-4539-BABB-FE4C9D9A1B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF99846-1830-4539-BABB-FE4C9D9A1B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF99846-1830-4539-BABB-FE4C9D9A1B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

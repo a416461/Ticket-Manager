@@ -1,0 +1,78 @@
+﻿.my-account-options-container {
+    text-align: center;
+    margin: 15px auto;
+
+    div {
+        margin: 10px 5%;
+        width: 90%;
+        padding: 0;
+
+        a {
+            color: #000;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 25px;
+            background-color: #bbb;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $link-color;
+            }
+        }
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    .my-account-options-container {
+
+        div {
+
+            a {
+                font-size: 20px;
+                padding: 35px;
+            }
+        }
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    .my-account-options-container {
+        margin: 20px auto;
+
+        div {
+            margin: 2%;
+            width: 46%;
+
+            a {
+                font-size: 22px;
+                padding: 35px;
+            }
+        }
+    }
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .my-account-options-container {
+        margin: 40px auto;
+
+        div {
+
+            a {
+                font-size: 24px;
+                padding: 45px;
+            }
+        }
+    }
+}

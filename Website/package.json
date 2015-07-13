@@ -1,0 +1,15 @@
+{
+  "name": "earlybirds",
+  "version": "1.0.0",
+  "description": "created by david pffeiffer for vintage software",
+  "main": "earlybirds.module.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Pfeiffer",
+  "license": "ISC"
+}

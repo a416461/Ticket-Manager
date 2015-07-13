@@ -1,0 +1,43 @@
+﻿/*****************************************
+    About Us Wrapper
+*****************************************/
+
+.about-us {
+    padding: 15px;
+    margin: 0 auto;
+
+    div {
+        text-align: center;
+        padding: 10px;
+
+        h3 {
+            margin: 10px 0;
+        }
+    }
+}
+
+#vintage-team-image {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+}

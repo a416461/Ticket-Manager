@@ -1,0 +1,108 @@
+﻿/*****************************************
+    General
+*****************************************/
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        color: $hover-link-color;
+    }
+}
+
+hr {
+    height: 2px;
+    margin: 10px 0;
+    background: $light-gray;
+    border: none;
+}
+
+.main-button {
+    max-width: 100%;
+    background-color: #555;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+
+    &:hover {
+        background-color: lighten(#555, 5%);
+        color: #000;
+        cursor: pointer;
+    }
+
+    &.green {
+        background-color: #008000;
+
+        &:hover {
+            background-color: lighten(#008000, 5%);
+        }
+    }
+
+    &.red {
+        background-color: #cc0000;
+
+        &:hover {
+            background-color: lighten(#cc0000, 5%);
+        }
+    }
+
+    &.blue {
+        background-color: #195087;
+
+        &:hover {
+            background-color: lighten(#195087, 5%);
+        }
+    }
+}
+
+.scrollable {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .app-content {
+        .title-bar {
+            padding: 10px 20px;
+
+            .main-button {
+                float: right;
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+}

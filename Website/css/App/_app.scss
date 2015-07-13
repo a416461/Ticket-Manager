@@ -1,0 +1,191 @@
+﻿/*****************************************
+    Main App View (ngview)
+*****************************************/
+
+.app-content {
+    background: #fff;
+
+    .title-bar {
+        padding: 30px 10px;
+        background-color: $primary-color;
+        text-align: center;
+        color: #fff;
+
+        h2 {
+            margin: 0;
+            font-size: 34px;
+            display: block;
+        }
+    }
+
+    .search-bar {
+        max-width: 100%;
+        background-color: #eee;
+
+        input {
+            width: 100%;
+            padding: 20px 30px;
+            font-size: 24px;
+            background-color: #eee;
+            color: gray;
+            border: none;
+            border-radius: 5px;
+            margin: 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .main-content {
+        margin: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 15px;
+
+            > a {
+                display: block;
+                padding: 15px 20px;
+                background-color: #ddd;
+                border-radius: 5px;
+                color: $primary-color;
+
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+
+    .list-item {
+        overflow: hidden;
+
+        .title {
+            float: none;
+            display: block;
+            text-align: center;
+            margin: 0;
+            padding: 1px 0;
+
+            h3 {
+                margin: 0 0 10px 0;
+                font-size: 22px;
+            }
+        }
+
+        .meta-data {
+            float: none;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+
+    .app-content {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 200px;
+        max-width: calc(100% - 200px);
+
+        #page-with-search-bar {
+            max-height: calc(100% - 198px);
+        }
+
+        .main-content {
+            margin: 25px;
+            max-height: calc(100% - 130px);
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .title-bar {
+            padding: 15px;
+            overflow: auto;
+            border-bottom: 6px solid $secondary-color;
+
+            h2 {
+                float: left;
+                display: inline-block;
+                margin: 0;
+                padding: 10px 5px;
+            }
+        }
+
+        ul {
+            max-height: 100%;
+        }
+
+        .list-item {
+
+            .title {
+                display: inline-block;
+                float: left;
+
+                h3 {
+                    margin: 0;
+                }
+            }
+
+            .meta-data {
+                margin: 0 0 0 30px;
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+}
+
+
+
+/*****************************************
+    EXTRA Large Breakpoint
+*****************************************/
+@media screen and (min-width: 1300px) {
+
+    .app-content {
+        overflow: auto;
+
+        #page-with-search-bar {
+            height: calc(100% - 192px);
+        }
+
+        .main-content {
+            height: calc(100% - 124px);
+        }
+
+        ul {
+            width: calc(100% - 375px);
+        }
+    }
+}

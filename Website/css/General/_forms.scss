@@ -1,0 +1,125 @@
+﻿/*****************************************
+    Forms
+*****************************************/
+
+.main-form-wrapper {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+
+    hr {
+        margin: 15px 0 35px 0;
+    }
+}
+
+.app-form-wrapper {
+    margin: 0 auto;
+
+    form {
+        padding: 25px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #fff;
+        background-color: $secondary-color;
+        padding: 30px 0;
+        margin: 0;
+        font-weight: bold;
+        font-size: 34px;
+    }
+}
+
+form {
+    text-align: left;
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+
+    input, textarea {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+
+        &:focus {
+            outline: $link-color solid 3px;
+        }
+    }
+
+    textarea {
+        min-height: 200px;
+        max-height: 450px;
+        resize: vertical;
+    }
+
+    select {
+        padding: 5px;
+        margin: 10px 0;
+
+        &:focus {
+            outline: $link-color solid 3px;
+        }
+    }
+
+    button {
+        padding: 5px 35px;
+        margin: 15px 0 5px 0;
+        background: $secondary-color;
+        border: none;
+        border-bottom: 4px solid black;
+        border-radius: 4px;
+        color: #fff;
+
+        &:hover {
+            background: $primary-color;
+        }
+
+        &:active {
+            background: black;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    .main-form-wrapper {
+        margin: 20px;
+        border-radius: 15px;
+        padding: 30px;
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .main-form-wrapper {
+        margin: 30px 20px;
+        margin: 20px 0;
+    }
+
+    .app-form-wrapper {
+        max-width: 700px;
+        margin-top: 40px;
+        border: 20px solid $secondary-color;
+        box-shadow: 5px 5px 5px grey;
+
+        h2 {
+            padding: 0 0 20px 0;
+        }
+    }
+}

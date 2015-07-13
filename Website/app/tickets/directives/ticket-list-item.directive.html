@@ -1,0 +1,10 @@
+﻿<a ng-href="/app/tickets/{{ ticket.id }}">
+    <div class="list-item">
+        <div class="title">
+            <h3>{{ ticket.title }}</h3>
+        </div>
+        <div class="meta-data">
+            <div class="default">{{ ticket.category }}</div><div class="priority" ng-class="{'Low':'low', 'Medium':'medium', 'High':'high'}[ticket.priority]">{{ ticket.priority }}</div><div class="status" ng-class="{'Open':'green', 'Closed':'red'}[ticket.status]">{{ ticket.status }}</div>
+        </div>
+    </div>
+</a>

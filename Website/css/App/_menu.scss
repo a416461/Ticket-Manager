@@ -1,0 +1,77 @@
+﻿/*****************************************
+    App Menu
+*****************************************/
+
+.app-menu {
+    background: #222;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    text-align: center;
+    border-bottom: 6px solid #222;
+    border-top: 6px solid #222;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: #bbb;
+                text-align: center;
+                list-style: none;
+                font-size: 16px;
+                font-weight: bold;
+                display: block;
+                padding: 20px;
+                margin: 0 6px;
+
+                &:hover {
+                    background: #333;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+}
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    .app-menu {
+        max-height: 100%;
+        position: absolute;
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+        text-align: left;
+
+        ul {
+
+            li {
+
+                a {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

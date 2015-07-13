@@ -1,0 +1,10 @@
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\Website.dll.config
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\Website.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\Website.pdb
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\obj\Debug\Website.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\obj\Debug\Website.pdb
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\EntityFramework.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\EntityFramework.SqlServer.dll
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\EntityFramework.xml
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\bin\EntityFramework.SqlServer.xml
+C:\Users\dpfeiffer\Documents\David Pfeiffer\My Projects\EarlyBirds\Website\obj\Debug\Website.csprojResolveAssemblyReference.cache

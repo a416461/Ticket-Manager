@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="earlybirds">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Early Birds | Home</title>
+    <base href="/" />
+</head>
+<body>
+    <header>
+        <div><a href="/"><img src="/img/early-birds-logo.png" alt="Early Birds Logo" /></a></div>
+        <div id="toggle-login-button"><a href="/login">Login</a></div>
+        <div id="toggle-login-button"><a href="/register">Register</a></div>
+    </header>
+    <ng-view></ng-view>
+    <footer>
+        <div id="footer-top">
+            <div class="row" id="footer-top-wrapper">
+                <div class="col-6-md">
+                    <div class="col-6-sm">
+                        <h4>About Us</h4>
+                        <p>Early Birds is a professional service that helps companies securely and efficiently manage customer service requests accross multiple platforms.</p>
+                    </div>
+                    <div class="col-6-sm">
+                        <h4>Vintage Software</h4>
+                        <p>This project was built for the Vintage Software team by David J Pfeiffer during their 2015 summer internship program.</p>
+                    </div>
+                </div>
+                <div class="col-6-md">
+                    <div class="col-6-sm">
+                        <h4>Getting Started</h4>
+                        <ul>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Business Accounts</a></li>
+                            <li><a href="#">User Accounts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6-sm">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Email<br />
+                            <a href="mail:support@vintagesoftware.com">support@vintagesoftware.com</a><br />
+                            Phone<br />
+                            <a href="tel:888-653-8468">(888) 653-8468</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div id="footer-bottom-wrapper">
+                <div>
+                    <p>&copy; 2002 to 2015 <a href="http://www.vintagesoftware.com">Vintage Software</a>, LLC. All rights reserved.</p>
+                </div>
+                <div id="footer-social-icons">
+                    <a href="http://facebook.com"><img src="img/Social/facebook.png" /></a>
+                    <a href="http://plus.google.com"><img src="img/Social/google_plus.png" /></a>
+                    <a href="http://instagram.com"><img src="img/Social/instagram.png" /></a>
+                    <a href="http://twitter.com"><img src="img/Social/twitter.png" /></a>
+                    <a href="http://youtube.com"><img src="img/Social/youtube.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/dist/app.js"></script>
+</body>
+</html>

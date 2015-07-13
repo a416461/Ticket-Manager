@@ -1,0 +1,201 @@
+﻿/*****************************************
+    Footer
+*****************************************/
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    border-top: 10px solid $secondary-color;
+
+    #footer-top {
+        max-width: 100%;
+        background-color: $primary-color;
+        color: $footer-text-color;
+        font-size: 16px;
+        border-bottom: 10px solid darken($primary-color, 3%);
+
+        #footer-top-wrapper {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+
+            div {
+                padding: 0;
+
+                div {
+                    padding: 10px 20px;
+
+                    h4 {
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        color: #fff;
+                        margin: 0;
+                        padding: 0 0 6px 0;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-weight: 400;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+
+                        li {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-bottom {
+        width: 100%;
+        background-color: darken($primary-color, 5%);
+        padding: 10px 10px;
+        text-transform: uppercase;
+        color: $footer-text-color;
+        font-size: 10px;
+        text-align: center;
+
+        #footer-bottom-wrapper {
+            padding: 0 15px;
+
+            p {
+                margin: 0;
+                font-size: 10px;
+
+                a {
+                    color: $footer-text-color;
+
+                    &:visited {
+                        color: $footer-text-color;
+                    }
+                }
+            }
+
+            #footer-social-icons {
+                display: inline-block;
+
+                img {
+                    vertical-align: middle;
+                    padding: 2px;
+                    margin: 0;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*****************************************
+    Small Breakpoint
+*****************************************/
+@media screen and (min-width: 540px) {
+    footer {
+
+        #footer-top {
+
+            #footer-top-wrapper {
+                text-align: left;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+
+        #footer-bottom {
+            padding: 10px 0;
+
+            #footer-bottom-wrapper {
+                display: flex;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                p {
+                    font-size: 14px;
+                }
+
+                div {
+                    width: 50%;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*****************************************
+    Medium Breakpoint
+*****************************************/
+@media screen and (min-width: 720px) {
+    footer {
+
+        #footer-top {
+
+            #footer-top-wrapper {
+                padding: 30px 0;
+
+                div {
+
+                    div {
+                        padding: 20px 5px;
+
+                        ul {
+                            padding: 0 0 0 40px;
+                            list-style: circle;
+
+                            li {
+                                padding: 0 0 8px 0;
+                            }
+                        }
+
+                        h4 {
+                            margin: 0 0 12px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*****************************************
+    Large Breakpoint
+*****************************************/
+@media screen and (min-width: 960px) {
+    footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0;
+
+        #footer-top {
+
+            #footer-top-wrapper {
+
+                div {
+
+                    div {
+                        padding: 20px 15px;
+
+                        h4 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
